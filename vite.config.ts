@@ -8,10 +8,10 @@ export default defineConfig({
   build: {
     outDir: 'build',
     emptyOutDir: true, // also necessary
-  }, 
+  },
   server: {
-         host: '0.0.0.0',
-         port: Number(process.env.VITE_PORT) || 5173,
-        allowedHosts: ['dlclassifier.onrender.com']
-       },
+    host: '0.0.0.0',
+    port: Number(process.env.VITE_PORT) || 5173,
+    allowedHosts: ['dlclassifier.onrender.com']
+  },
 })
