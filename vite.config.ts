@@ -11,7 +11,7 @@ export default defineConfig({
   }, 
   server: {
          host: '0.0.0.0',
-         port: 3000,
-    allowedHosts: ['dlclassifier.onrender.com']
+         port: Number(process.env.VITE_PORT) || 5173,
+        allowedHosts: ['dlclassifier.onrender.com']
        },
 })
